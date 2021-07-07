@@ -1,0 +1,16 @@
+Harmonia de cores:
+Circulo cromático:
+Cores primárias: Amarelo, vermelho, azul (formam um triangulo perfeito)
+Cores secundarias: Laranja, violeta, verde (formam um triangulo perfeito de ponta cabeça)
+Cores terciárias: junção de cores: Amarelo-esverdeado, amarelo-alaranjado, vermelho-alaranjado, vermelho-arroxeado, azul-arroxeado, azul-esverdeado
+Temperatura de cores: Hemisferio da esquerda = cores frias, hemisferio da esquerda = cores quentes
+Paleta de cores tem normalmente entre 3 a 5 cores, desconsiderando branco e preto
+Cores complementares: cores que tem mais contraste entre si, para saber qual é a cor que mais contrasta com o violeta é só você traçar uma reta para a cor oposta a ele.
+Cores análogas: cores que não tem contrastes grandes entre elas, mas que são perceptiveis: para descobrir a cor analoga de uma cor, é só pegar as cores ao lado, vizinhas.
+cores análogas e complementares: pegue as cores vizinhas e a oposta.
+Cores Análogas relacionadas: pegue duas cores vizinhas, pule uma cor, e pegue a proxima.
+Cores intercaladas: Pegue uma cor, pule uma, e pegue a outra, pule denovo, e pegue o próximo.
+Cores triádicas: pegue uma cor de referencia, pule 3 cores e pegue outra cor, depois pule mais 3, e pegue outra cor, isso irá gerar um triangulo equilatero.
+Cores em Quadrado: pegue uma cor de referencia, pule 2, pegue a proxima, pule mais duas, pegue a proxima, pule mais duas, pegue uma cor, isso irá formar um quadrado.
+Cores Tetrádicas: escolha uma cor, pegue a cor complementar dela, escolha outra cor, pegue o complementar dela, e trace uma paralela, feito.
+Monocromia: Escolha uma cor e modifique a saturação e o brilho, isso irá formar a monocromia.

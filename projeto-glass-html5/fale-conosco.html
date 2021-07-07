@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Google Glass Information</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/form.css"/>
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script>
+       function calc_total() {
+           var qtd = parseInt(document.getElementById('cQtd').value);
+           tot = qtd * 1500;
+           document.getElementById('cTot').value = tot;
+       }
+    </script>
+</head>
+<!--Chamando o javascript que está fora do documento html-->
+
+
+<body>
+<div id="interface"> <!--Divisão-->
+
+    <header id="cabecalho">
+    <hgroup>
+    <h1>Google Glass</h1>
+    <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+    <img id="icone" src="_imagens/contato.png">
+
+<nav id="menu">
+<h1>Menu Principal</h1>
+    <ul type="disc"> <!--nas listas ordenadas, pode ser usado o parametro type para trocar o parametro Types: 1) lista enumerada a) lista ordenada com a,b,c... A) mesma coisa do a minusculo porém com letras maiusculas i) enumerado com numeros romanos I) mesma coisa do minusculo porem maiusculo, para começar com outras letras ou numeros, deve ser utilizado a syntax "start" após o type o numero dentro da syntax start deve ser o numero de qual você quer que começe, ex: para começar com a letra C você deve utilizar o numero 3 
+    para listas não ordenadas existem os types: square, circle e disc-->
+        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+        <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <article id="noticia-principal">
+        <header id="cabecalho-artigo">
+        <hgroup> 
+        <h3>Fale Conosco > Contato</h3> <!-- </br> serve para quebra de linhas, &nbsp serve para dar mais do que um espaço-->
+        <h1>Formulário de Contato</h1>
+        <h2>por @Ramossvitor</h2>
+        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+        </hgroup>
+    </header>
+
+<form method="POST" id="fContato" action="mailto:ramossvitor@gmail.com" oninput="calc_total();">
+    <fieldset><legend id="usuario">Identificação do Usuário</legend>
+    <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+    <p><label for="cSenha">Senha:</label><input type="password" name="tSenha" id="cSenha" size="20" maxlength="16" placeholder="Senha"/></p>
+    <p><label for="cEmail">E-mail:</label><input type="email" name="tEmail" id="cEmail" size="20" maxlength="45" placeholder="E-mail"/></p>
+    <fieldset id="sexo"><legend>Sexo:</legend>
+        <input type="radio" name="tSex" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+        <input type="radio" name="tSex" id="cFem"/> <label for="cFem">Feminino</label></fieldset>
+    <p><label for="cData">Data de Nascimento:</label> <input type="date" name="tData" id="cData"></p>
+</fieldset>
+
+<fieldset><legend id="endereco">Endereço do Usuário</legend>
+    <p><label for="cLogra">Logradouro:</label><input type="text" name="tLogra" id="cLogra" size="30" maxlength="60" placeholder="Rua/Avenida..."/></p>
+    <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999" placeholder="Numero da casa/apto"/></p>
+    <p><label for="cEst">Estado:</label><select name="tEst" id="cEst">
+    <optgroup label="Região Sudeste">
+        <option>Rio de janeiro</option>
+        <option>São paulo</option>
+        <option>Minas Gerais</option>
+    </optgroup>
+    <optgroup label="Sulzada dos cria">
+        <option value="RS">Rio grande do sul</option>
+        <option selected>Santa Catarina</option>
+        <option>Paraná</option>
+    </optgroup>
+    <optgroup label="Cuidado com a carteira">
+        <option>Goias</option>
+        <option>Distrito Federal</option>
+    </optgroup>
+    <optgroup label="Resto">
+        <option>Pará</option>
+        <option>Bahia</option>
+        <option>Amazonas</option>
+        <option>Rondonia</option>
+        <option>Roraima</option>
+        <option>Pernambuco</option>
+        <option>Espirito santo</option>
+        <option>Recife</option>
+        <option>Alagoas</option>
+    </optgroup>
+    <optgroup label="Isso é no brasil?">
+        <option>Acre</option>
+    </optgroup>
+    </select></p>
+    <p><label for="cCid">Cidade:</label>
+    <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Cidade" list="cidades"></p>
+    <datalist id="cidades">
+        <option value="Floripaaa"></option>
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Niterói"></option>
+        <option value="Belfort Roxo"></option>
+    </datalist>
+</fieldset>
+<fieldset><legend id="mensagem">Mensagem do Usuário</legend>
+    <p><label for="cGur">Grau de Urgência:</label>Min<input type="range" name="tGur" id="cGur" min="0" max="10" step="1"/>Máx</p>
+    <p><label for="cMsg">Mensagem:</label>
+    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Mensagem"></textarea></p>
+</fieldset>
+<fieldset><legend id="pedido">Quero um Google Glass</legend>
+    <p><input type="checkbox" name="tPed" id="cPed" checked/><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="cCor">Cor:</label><input type="color" name="tCor" id="cCor" value="#FFFFFF"/></p>
+    <p><label for="cQtd">Quantidade:</label><input type="number" name="tQtd" id="cQtd" min="1" max="10"/></p>
+    <p><label for="cTot">Preço Total: R$</label><input type="text" name="tTot" id="cTot" placeholder="Total" readonly/></p>
+</fieldset>
+
+<!--<input type="submit" value="Enviar"/> outro tipo de botão-->   
+<input type="image" name="tEnviar" id="cEnviar" src="_imagens/botao-enviar.png"/>
+</form>
+
+<footer id="rodape">
+    <p>Copyright&copy; 2021 - by Vitor Silveira <br/>
+    <a href="https://instagram.com/ramossvitor" target="_blank">Instagram</a> | <a href="https://twitter.com/ramossvitor08" target="_blank">Twitter</a></p>
+    </footer>
+    
+    </div>
+    </body>
+    </html>

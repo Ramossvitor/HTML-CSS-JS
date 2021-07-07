@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("fundo.jpg"); 
+    background-color: #eeeeee;
+    color: rgba(0,0,0,1); 
+}
+
+div#interface {
+    width: 900px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+/*Desta forma, ele muda globalmente, todo o site que tiver a tag <p> irá levar essas definições
+  <!--referente ao background-image: se existisse uma imagem com este nome, ela seria utilizada como fundo do background-->
+  <!--referente ao rgba: o ultimo paramentro serve para opacidade da letra-->
+  */ 
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1f1f1f;
+}
+
+header#cabecalho img#icone {
+    position: relative;
+    left: 720px;
+    top: -60px;
+}
+
+header#cabecalho {
+    border-bottom: 2px rgb(37, 37, 37) solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 85px;
+}
+
+header#cabecalho h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 25pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Roboto', sans-serif;;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+  /* Formatação Imagens */
+
+figure.foto-legenda {
+    border: 8px solid #cccccc;
+    box-shadow: 1px 1px 4px black;
+    position: relative;
+    
+}
+
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+    top: 0px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+
+}
+
+/*Formatação menu*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none; /*retirar marcadores */
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 580px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(136, 136, 136);
+    padding: 12px;
+    margin: 2px;
+    transition: background-color 0.3s;
+}
+
+nav#menu li:hover {
+    background-color: rgb(95, 95, 95);
+
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+article#noticia-principal h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: -15px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #eeeeee;
+}
+
+.direita {
+    text-align: right;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+}
+section#corpo {
+    display: block;
+    width: 450px;
+    float: left;
+    border-right: 2px solid rgb(37, 37, 37);
+    padding-right: 23px;
+}
+
+table#tabelaspec {
+    border: 1px solid rgb(37, 37, 37);
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid rgb(37, 37, 37);
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: rgb(231, 231, 231);
+    background-color: rgb(37, 37, 37);
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #727272;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 11px;
+}
+
+aside#lateral {
+    display: block;
+    width: 400px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 2px solid rgb(37, 37, 37);
+}
+
+footer#rodape p {
+    text-align: center;
+}

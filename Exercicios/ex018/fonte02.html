@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'franchise';
+            src: url('fonts/Franchise.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+            TIPOS DE FORMAT()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (Apple Advanced Typography)
+            - svg
+            */
+        }
+        @font-face {
+            font-family: 'prodelt';
+            src: url('fonts/Prodelt\ Co.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'franchise', Arial, Helvetica, sans-serif;
+            font-size: 4em;
+        }
+
+        h2 {
+            font-family: 'prodelt';
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugiat architecto consectetur amet dignissimos magnam iste praesentium veniam? Deleniti fugiat sint voluptates? Accusamus laudantium quam, assumenda quae ipsam provident quibusdam.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur ad pariatur natus perferendis ab fugit, id aperiam esse quae nam vero provident, repellat facilis totam modi iste perspiciatis est!</p>
+</body>
+</html>

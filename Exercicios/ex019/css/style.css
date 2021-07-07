@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/* O que em HTML É "ID" em CSS é "#"
+   E o que é class em HTML em CSS é "."
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap');
+
+body {
+    background-color: #38b938b2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #174917;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #174917;
+    color: white;
+}
+
+h2 {
+    color: #1a1f1a;
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.aprendendo {
+   text-align: center;
+   text-decoration: underline; 
+   font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
