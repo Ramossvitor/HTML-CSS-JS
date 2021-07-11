@@ -92,6 +92,13 @@ a.links {
     text-decoration: none;
 }
 
+a.links:hover {
+    background-color: #081d12;
+    color: white;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
 picture {
     display: block;
     margin: auto;
